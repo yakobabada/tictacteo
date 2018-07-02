@@ -13,7 +13,12 @@ class Point
         $this->y = $y;
     }
 
-    public function hasSamePosition($point) {
+    /**
+     * @param Point $point
+     * @return bool
+     */
+    public function hasSamePosition(Point $point): bool
+    {
         if ($this->x === $point->x && $this->y === $point->y) {
             return true;
         }
